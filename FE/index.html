@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <title>Wicklow Screen</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid d-flex justify-content-around">
+                <div class="circular-img"></div>
+                <h1 class="mt-2">Wicklow Screen</h1>
+            </div>
+        </nav>
+        <div class="form">
+            <form id="setup-form" action="submit">
+                <div class="mb-3">
+                    <div class="mb-3 form-check d-flex justify-content-evenly">
+                        <label class="h5"><input class="form-check-input" type="radio" id="type" name="type" value="door" checked> Door</label>
+                        <label class="h5"><input class="form-check-input" type="radio" id="type" name="type" value="window"> Window</label>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="height" class="form-label">Height</label>
+                    <input type="number" class="form-control" id="height" placeholder="Enter height in mm" required>
+                </div>
+                <div class="mb-3">
+                    <label for="width" class="form-label">Width</label>
+                    <input type="number" class="form-control" id="width" placeholder="Enter width in mm" required>
+                </div>
+                <div class="mb-3">
+                    <label for="divisions" class="form-label">Lites</label>
+                    <input type="number" class="form-control" id="divisions" placeholder="Enter no of lites">
+                </div>
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-dark">Show</button>
+                </div>
+            </form>
+        </div>
+        <div class="preview-wrapper">
+            <div class="mesh-div" id="preview" style="width: 200px; height: 200px; border: 1px solid #ccc;"></div>
+        </div>
+
+    </div>
+
+    <footer class="text-center mt-5">
+        <p>&copy; Wicklow Screen</p>
+    </footer>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
